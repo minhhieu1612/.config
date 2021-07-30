@@ -1,6 +1,6 @@
 1. Cài đặt Windows Terminal trong Microsoft Store.
 2. Cài neovim theo link sau: https://github.com/neovim/neovim/wiki/Installing-Neovim
-3. Download: https://github.com/minhhieu1612/.config/ và bỏ thư mục nvim tại đường dẫn: ~/AppData/Local 
+3. Download: https://github.com/minhhieu1612/config/ và bỏ thư mục nvim tại đường dẫn: ~/AppData/Local 
 và chạy lệnh sau trên Windows PowerShell:
   $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\AppData\Local\nvim\autoload\plug.vim")
 4. Tiếp tục trong PowerShell gõ lệnh: nvim +PlugInstall.
