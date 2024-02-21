@@ -12,5 +12,6 @@
     "prisma"
   ],
   "diagnostic.errorSign": "xx",
-  "diagnostic.warningSign": ">>"
+  "diagnostic.warningSign": ">>",
+  "snippets.ultisnips.pythonPrompt": false
 }

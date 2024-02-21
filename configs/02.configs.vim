@@ -74,6 +74,24 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 
+" coc completion key 
+inoremap <silent><expr> <TAB>
+				\ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+function! CheckBackspace() abort
+		let col = col('.') - 1
+			return !col || getline('.')[col - 1]  =~# '\s'
+		endfunction
+
+inoremap <silent><expr> <c-space> coc#refresh()
+
+inoremap <silent><expr> <Enter> 
+				\ coc#pum#visible() ? coc#pum#confirm() :
+				\ "\<Enter>"
+
 " Remap keys for applying codeAction to the current line.
 nmap <leader>ac <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.

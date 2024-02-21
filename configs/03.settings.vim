@@ -27,3 +27,5 @@ set relativenumber
 " set transparent bg
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
+
+let g:coc_disable_startup_warning = 1
